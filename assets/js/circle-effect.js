@@ -70,7 +70,7 @@
 
         function init() {
             _this.pos.x = Math.random()*width;
-            _this.pos.y = height+Math.random()*100;
+            _this.pos.y = height+Math.random()*1000;
             _this.alpha = 0.1+Math.random()*0.3;
             _this.scale = 0.1+Math.random()*0.3;
             _this.velocity = Math.random();
@@ -84,7 +84,7 @@
             _this.alpha -= 0.0005;
             ctx.beginPath();
             ctx.arc(_this.pos.x, _this.pos.y, _this.scale*10, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(153,153,153,'+ _this.alpha+')';
+            ctx.fillStyle = 'rgba(255,99,8,'+ _this.alpha+')';
             ctx.fill();
         };
     }
